@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 150px;
+        }
+        form label{
+            font-size: 22px;
+            font-weight: 600;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        form input{
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .qrcode{
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit_btn{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit_btn button{
+            cursor: pointer;
+            padding: 12px 25px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            box-shadow: black 2px 5px, white 3px 4px;
+            background-color: rgb(12, 172, 230);
+        }
+        .submit_btn button:hover{
+            background-color:rgb(77, 193, 235);
+            color: white;
+            
+        }
+        .qrcodePlace{
+            margin-top: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <form action="">
+        <div>
+            <label for="myInput">Enter any kind of link to get QR code</label>
+        </div>
+        <div>
+            <input id="myInput" type="text">
+        </div>
+        <div class="submit_btn">
+            <button class="genBtn" type="submit">GENERATE</button>
+        </div>
+   </form> 
+   <div class="qrcodePlace">
+    </div>
+</div>
+
+    <script src="formul.js"></script>
+</body>
+</html>
